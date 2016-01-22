@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  "SwiftCodeTest"
+title:  "Markdown练习"
 date:   2016-01-01 00:00:42 +0800
 categories: jekyll update
 ---
 ---
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+To add new posts, simply add a file in the `行内代码` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
 >Jekyll also offers powerful support for code snippets:  
 >d引用
-
 >>引用
 
+##块级代码
 **Swift Code Example:**
 
 {% highlight swift %}
@@ -54,6 +54,8 @@ class func attributedStringWithDoctorLevelString(levelString: String?, fontSize:
        return mAttrStr
    }
  {% endhighlight %}
+
+<http://www.wikipedia.org>
 
 [(链接到百度)](http://www.baidu.com/ "Baidu")  
 ![(图片)](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png/ "Baidu")  
