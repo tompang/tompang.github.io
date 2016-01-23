@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "SwiftCodeTest"
+title:  "Objectiv-C CodeTest"
 date:   2016-01-01 00:00:42 +0800
-categories: jekyll update
+categories: test update
 ---
 ---
 
@@ -13,47 +13,28 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 >>引用
 
-**Swift Code Example:**
+**Objectiv-C Code Example:**
 
-{% highlight swift %}
-class func attributedStringWithDoctorLevelString(levelString: String?, fontSize: CGFloat) -> NSAttributedString?{
-       guard let string = levelString else {
-           return nil
-       }
+{% highlight objc %}
 
-       let mAttrStr = NSMutableAttributedString(string: string)
-       let pattern = ZTIcons.icons().doctorLevelRegexString
-       let regex = try! NSRegularExpression(pattern: pattern, options: NSRegularExpressionOptions())
+#import "AppDelegate.h"
 
-       let imageBundleURL = NSBundle.mainBundle().URLForResource("Emoticons", withExtension: "bundle")!
-       let imageBundle = NSBundle(URL: imageBundleURL)!
+#import "ViewController.h"
 
-       repeat{
-           let aMatches = regex.firstMatchInString(mAttrStr.string, options: NSMatchingOptions(), range: NSMakeRange(0, mAttrStr.length))
+@implementation AppDelegate
 
-           guard let matches = aMatches else {
-               break
-           }
-           if(matches.range.location != NSNotFound){
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  self.window.backgroundColor = [UIColor whiteColor];
+  self.window.rootViewController = [[ViewController alloc] init];
+  [self.window makeKeyAndVisible];
+  return YES;
+}
 
-               let range = matches.range
-               var subString = (mAttrStr.string as NSString).substringWithRange(range)
-               subString = subString.stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: "[]"))
+@end
 
-               let attachment = NSTextAttachment()
-               //                attachment.image = UIImage(named: subString as String)
-               attachment.image = UIImage(contentsOfFile: imageBundle.pathForResource(subString, ofType: "png") ?? "")
-               attachment.bounds = CGRectMake(0, 0, fontSize, fontSize)
-
-               let imageAttrString = NSAttributedString(attachment: attachment)
-
-               mAttrStr.replaceCharactersInRange(range, withAttributedString: imageAttrString)
-           }
-
-       } while (true)
-       return mAttrStr
-   }
- {% endhighlight %}
+{% endhighlight %}
 
 [(链接到百度)](http://www.baidu.com/ "Baidu")  
 ![(图片)](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png/ "Baidu")  

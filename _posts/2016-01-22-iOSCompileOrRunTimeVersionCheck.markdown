@@ -11,7 +11,7 @@ categories: jekyll update
 
 ---
 Objectiv-C
-{% highlight objc %}
+{% highlight objc linenos %}
 
 //macros
 #define isAtLeast_iOS6 isAtLeast_iOS(6)
