@@ -9,7 +9,8 @@ categories: download file update
 A download example `NSURLSession` with JSON HTTPBody
 
 Example with `NSURLSessionDataTask`:
-{% highlight objc %}
+
+``` objc
 NSDictionary *params ＝ <#request params#>;
 NSURL *url = <#request url#>;
 NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -33,11 +34,11 @@ NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHand
 }];
 
 [task resume]; // NSURLSessionTask objects are always created in a suspended state and must be sent the -resume message before they will execute.
-{% endhighlight %}
+```
 
 Example with `NSURLSessionDownloadTask`:
 
-```objc
+``` objc
 NSDictionary *params ＝ <#request params#>;
 NSURL *url = <#request url#>;
 NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
