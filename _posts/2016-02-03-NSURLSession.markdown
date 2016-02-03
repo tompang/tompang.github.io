@@ -2,7 +2,7 @@
 layout: post
 title:  "NSURLSession DownloadFile Demo"
 date:   2016-02-03 21:00:42 +0800
-categories: jekyll update
+categories: download file update
 ---
 ---
 
@@ -71,8 +71,7 @@ NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request comple
 [task resume];
 {% endhighlight %}
 
-#See also:
-
+**See also:**  
 Reference: [NSURLSession]  
 Guide: [URL Session Programming Guide]  
 

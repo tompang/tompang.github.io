@@ -2,14 +2,11 @@
 layout: post
 title:  "iOSCompileOrRunTimeVersionCheck"
 date:   2016-01-22 00:00:42 +0800
-categories: jekyll update
+categories: iOS version check update
 ---
 
 用于iOS运行时判断系统版本
 
-**Code snippets:**
-
----
 Objectiv-C
 {% highlight objc linenos %}
 
@@ -21,6 +18,7 @@ Objectiv-C
 
 #pragma mark - Runtime Version Check Helper
 
+/// convenience
 BOOL isAtLeast_iOS(NSInteger majorVersion) {
     return isOperatingSystemAtLeastVersion(majorVersion, 0, 0);
 }

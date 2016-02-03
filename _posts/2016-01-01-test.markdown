@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Objectiv-C CodeTest"
-date:   2016-01-01 00:00:42 +0800
-categories: test update
+title:  "Markdown Demo"
+date:   2016-02-03 21:00:42 +0800
+categories: markdown update
 ---
 ---
 
@@ -10,8 +10,6 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 >Jekyll also offers powerful support for code snippets:  
 >d引用
-
->>引用
 
 **Objectiv-C Code Example:**
 
@@ -39,11 +37,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 [(链接到百度)](http://www.baidu.com/ "Baidu")  
 ![(图片)](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png/ "Baidu")  
 [好123][1]  
-
-[Baidu]Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+[Baidu]
 
 [Baidu]: http://www.baidu.com
 [1]: https://www.hao123.com
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
