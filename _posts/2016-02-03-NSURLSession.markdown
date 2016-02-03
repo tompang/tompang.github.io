@@ -36,6 +36,7 @@ NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHand
 {% endhighlight %}
 
 Example with `NSURLSessionDownloadTask`:
+
 ```objc
 NSDictionary *params ＝ <#request params#>;
 NSURL *url = <#request url#>;

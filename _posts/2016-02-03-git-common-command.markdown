@@ -16,6 +16,6 @@ categories: git update
 
 **See Also**  
 
- 1. [Git Tutorial](https://www.kernel.org/pub/software/scm/git/docs/gittutorial.html)
+ 1. [Git Tutorial](https://www.kernel.org/pub/software/scm/git/docs/gittutorial.html/ "Git tutorial")
  2. [The Git User’s Manual](https://www.kernel.org/pub/software/scm/git/docs/user-manual.html)
  3. [Github Bootcamp](https://help.github.com/articles/set-up-git/)
