@@ -6,23 +6,16 @@ categories: git update
 ---
 ---
 
-// clone remote repository to local
-`git clone https://github.com/Alamofire/Alamofire.git`
-
-// 
-`git init` // create a git repository at current directory  
-`git add ./` // add files to local git repository  
-
-//commit
-`git commit -m 'test'` // commit local  
-
-`git pull` // fetch remote and update local  
-
-`git push -u origin master` //commit to remote  
+ - `git clone https://github.com/Alamofire/Alamofire.git` // clone remote repository to local  
+ - `git init` // create a git repository at current directory  
+ - `git add ./` // add files to local git repository  
+ - `git commit -m 'commit description'` // commit local  
+ - `git pull` // fetch remote and update local  
+ - `git push -u origin master` //commit to remote  
 
 
-```rust
-lua.set("x", 2);
-lua.execute::<()>("x = x + 1").unwrap();
-let x: i32 = lua.get("x").unwrap();  // x is equal to 3
-```
+**See Also**  
+
+ 1. [Git Tutorial](https://www.kernel.org/pub/software/scm/git/docs/gittutorial.html)
+ 2. [The Git User’s Manual](https://www.kernel.org/pub/software/scm/git/docs/user-manual.html)
+ 3. [Github Bootcamp](https://help.github.com/articles/set-up-git/)
