@@ -2,16 +2,13 @@
 layout: post
 title:  "iOSCompileOrRunTimeVersionCheck"
 date:   2016-01-22 00:00:42 +0800
-categories: iOS Code
+categories: iOS version check update
 ---
 
 用于iOS运行时判断系统版本
 
-**Code snippets:**
-
----
 Objectiv-C
-{% highlight objc %}
+{% highlight objc linenos %}
 
 //macros
 #define isAtLeast_iOS6 isAtLeast_iOS(6)
@@ -21,6 +18,7 @@ Objectiv-C
 
 #pragma mark - Runtime Version Check Helper
 
+/// convenience
 BOOL isAtLeast_iOS(NSInteger majorVersion) {
     return isOperatingSystemAtLeastVersion(majorVersion, 0, 0);
 }
@@ -37,9 +35,11 @@ BOOL isOperatingSystemAtLeastVersion(NSInteger majorVersion, NSInteger minorVers
         NSString *minimumVersionString = [NSString stringWithFormat:@"%d.%d.%d",(int)majorVersion, (int)minorVersion, (int)patchVersion];
         isAtLeast = [[UIDevice currentDevice].systemVersion compare:minimumVersionString options:NSNumericSearch] != NSOrderedAscending;
     }
+    
     return isAtLeast;
 }
 {% endhighlight %}
 
 **See also:**  
 [语义化版本](http://semver.org/ "Semantic Versioning")
+
