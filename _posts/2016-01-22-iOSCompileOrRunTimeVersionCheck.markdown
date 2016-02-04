@@ -2,7 +2,7 @@
 layout: post
 title:  "iOSCompileOrRunTimeVersionCheck"
 date:   2016-01-22 00:00:42 +0800
-categories: jekyll update
+categories: iOS Code
 ---
 
 用于iOS运行时判断系统版本
