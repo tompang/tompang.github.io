@@ -21,5 +21,5 @@ github_username:  jekyll
 markdown: kramdown
 #markdown: redcarpet // github deprecate >which will not be supported on GitHub Pages after May 1st. At that time. see https://help.github.com/articles/updating-your-markdown-processor-to-kramdown.
 
-#语法高亮器: `rough` or `pygments`
-highlighter: rough
+#语法高亮器: `rouge` or `pygments`
+highlighter: rouge
