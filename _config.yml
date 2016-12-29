@@ -21,3 +21,5 @@ markdown: kramdown
 
 #语法高亮器: `rouge` or `pygments`
 highlighter: rouge
+
+theme: jekyll-theme-time-machine
